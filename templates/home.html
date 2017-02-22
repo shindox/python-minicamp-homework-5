@@ -2,23 +2,31 @@
   <link rel="stylesheet" type="text/css" href="/static/styles/styles.css">
 </head>
 
+<div id="body1">
 <h1 class="header">My Pets</h1>
 
 <form id="new-pet-form" action="/new-pet" method="POST" onsubmit="return validateForm()">
-  Name:
+  <!-- fix for alignment with label and css -->
+  <label for="name">Name:</label>
   <input id="nameInput" name="name" />
   <br>
-  Species:
+  <label for="species">Species:</label>
   <input id="speciesInput" name="species" />
   <br>
-  Age:
+  <label for="age">Age:</label>
   <input id="ageInput" name="age" />
   <br>
   <input id="submit" type="submit" value="Submit" />
 </form>
 
-<a href="/pets">Pets List</a>
-
+<a href="/pets" id="pets">Pets List</a>
+<br>
+<input id="textColor" />
+<button id="changeColor">Change Text Color</button>
+<br>
+</div>
+<input type="button" id="hide" value="HIDE EVERYTHING!"></input>
+<div id="body2">
 <p>Apply to our full-time and part-time courses to take accelerate your education.</p>
 <p>Our courses teach you the skills you need to take the next step in becoming a software engineer.</p>
 <p>We provide job support during and after the course to help you continue to develop your skills and find the right opportunities.</p>
@@ -26,5 +34,4 @@ Learn more <a href="https://www.lambdaschool.com">here.</a>
 
 
 <script src="/static/scripts/home.js"></script>
-
-
+</div>

@@ -1,3 +1,29 @@
 body {
 	background: whitesmoke;
 }
+
+label {
+    display: inline-block;
+    width:60px;
+    text-align: right;
+}
+
+#pets {
+	color: green;
+  text-decoration: none;
+  font-size: 200%;
+}
+#pets:hover {
+	color: cyan;
+}
+
+#hide {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 12px 11px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
